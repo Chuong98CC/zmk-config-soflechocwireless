@@ -75,11 +75,11 @@
             //              |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans    &trans    &trans     &trans   &trans
-&trans      &kp INS       &kp PSCRN     &kp K_CMENU   &trans        &trans                          &kp PG_UP  &trans    &kp UP    &trans     &kp N0   &trans
-&trans      &kp LALT      &kp LCTRL     &kp LSHFT     &trans        &kp CLCK                        &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  &kp BSPC
-&trans      &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans        &trans    &trans  &trans     &trans    &trans    &trans     &trans   &trans
-                          &trans        &trans        &trans        &trans        &trans    &trans  &trans     &trans    &trans    &trans
+&bootloader  &bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_DISC 0  &bt BT_SEL 1  &bt BT_DISC 1                    &rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &bootloader
+&sys_reset   &kp INS         &kp PSCRN     &kp K_CMENU    &trans        &trans                           &kp PG_UP        &trans           &kp UP           &trans           &kp N0           &sys_reset
+&trans       &kp LALT        &kp LCTRL     &kp LSHFT      &trans        &kp CLCK                         &kp PG_DN        &kp LEFT         &kp DOWN         &kp RIGHT        &kp DEL          &kp BSPC
+&trans       &kp K_UNDO      &kp K_CUT     &kp K_COPY     &kp K_PASTE   &trans         &trans    &trans  &trans           &trans           &trans           &trans           &trans           &trans
+                             &trans        &trans         &trans        &trans         &trans    &trans  &trans           &trans           &trans           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -87,11 +87,11 @@
 
         layer_3 {
             bindings = <
-&bootloader      &bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_DISC 0  &bt BT_SEL 1  &bt BT_DISC 1                    &rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_SPD   &rgb_ug RGB_SPI  &bootloader
-&rgb_ug RGB_EFF  &kp F1          &kp F2        &kp F3         &kp F4        &kp F5                           &msc SCRL_LEFT   &msc SCRL_DOWN   &msc SCRL_UP     &msc SCRL_DOWN    &trans           &kp DOUBLE_QUOTES
-&kp F16          &kp F6          &kp F7        &kp F8         &kp F9        &kp F10                          &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT         &kp LEFT_BRACE   &kp RIGHT_BRACE
-&kp F17          &kp F11         &kp F12       &kp F13        &kp F14       &kp F15        &trans    &trans  &kp HOME         &kp PG_DN        &kp LESS_THAN    &kp GREATER_THAN  &kp QUESTION     &kp COLON
-                                 &trans        &trans         &trans        &trans         &trans    &trans  &trans           &trans           &kp UNDERSCORE   &kp PLUS
+&trans   &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                    &kp CARET       &kp AMPERSAND   &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans   &kp F1           &kp F2       &kp F3    &kp F4      &kp F5                         &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP    &msc SCRL_DOWN        &trans                 &kp DOUBLE_QUOTES
+&kp F16  &kp F6           &kp F7       &kp F8    &kp F9      &kp F10                        &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT             &kp LEFT_BRACE         &kp RIGHT_BRACE
+&kp F17  &kp F11          &kp F12      &kp F13   &kp F14     &kp F15      &trans    &trans  &kp HOME        &kp PG_DN       &kp LESS_THAN   &kp GREATER_THAN      &kp QUESTION           &kp COLON
+                          &trans       &trans    &trans      &trans       &trans    &trans  &trans          &trans          &kp UNDERSCORE  &kp PLUS
             >;
         };
     };
