@@ -61,9 +61,9 @@
             bindings = <
 &bootloader  &kp F1         &kp F2         &kp F3         &kp F4          &kp F5                                &kp F6         &kp F7         &kp F8             &kp F9           &kp F10          &kp F11
 &sys_reset   &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_CLR_ALL  &kp RG(RA(T))                         &kp F13        &kp F14        &kp F15            &kp F16          &kp F17          &kp F12
-&trans       &kp RA(RG(A))  &kp RA(RG(S))  &kp RA(RG(D))  &kp RA(RG(F))   &kp RG(RA(G))                         &kp RA(RG(H))  &kp RA(RG(J))  &kp RA(RG(K))      &kp RA(RG(L))    &rgb_ug RGB_EFF  &rgb_ug RGB_TOG
-&trans       &kp RG(RA(Z))  &kp RG(RA(X))  &kp RG(RA(C))  &kp RA(RG(V))   &kp RA(RG(B))  &trans    &trans       &kp RA(RG(N))  &kp RA(RG(M))  &kp RA(RG(COMMA))  &kp RA(RG(DOT))  &trans           &trans
-                            &trans         &trans         &trans          &trans         &trans    &bootloader  &sys_reset     &trans         &trans             &trans
+&trans       &kp RA(RG(A))  &kp RA(RG(S))  &kp RA(RG(D))  &kp RA(RG(F))   &kp RG(RA(G))                         &kp RA(RG(H))  &kp RA(RG(J))  &kp RA(RG(K))      &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG
+&trans       &kp RG(RA(Z))  &kp RG(RA(X))  &kp RG(RA(C))  &kp RA(RG(V))   &kp RA(RG(B))  &trans    &bootloader  &kp RA(RG(N))  &kp RA(RG(M))  &kp RA(RG(COMMA))  &kp RA(RG(DOT))  &trans           &trans
+                            &trans         &trans         &trans          &trans         &trans    &sys_reset   &trans         &trans         &trans             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
