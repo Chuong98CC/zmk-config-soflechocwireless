@@ -42,7 +42,7 @@
 &kp GRAVE                 &kp Q   &kp W               &kp E             &kp R                   &kp T                                                                      &kp Y                  &kp U        &kp I              &kp O      &kp P     &kp LEFT_BRACKET
 &mt LEFT_GUI PAGE_UP      &kp A   &kp S               &kp D             &kp F                   &kp G                                                                      &kp H                  &kp J        &kp K              &kp L      &kp SEMI  &kp SINGLE_QUOTE
 &mt LEFT_SHIFT PAGE_DOWN  &kp Z   &kp X               &kp C             &kp V                   &kp B                 &mt LEFT_CONTROL TAB       &mt RCTRL BACKSPACE       &kp N                  &kp M        &kp COMMA          &kp DOT    &kp FSLH  &mt RIGHT_SHIFT NON_US_BACKSLASH
-                                  &mt LEFT_ALT SPACE  &mt LEFT_GUI TAB  &lt 1 RG(LEFT_BRACKET)  &mt LEFT_SHIFT SPACE  &lt 0 RG(RIGHT_BRACKET)    &mt DELETE RG(RIGHT_ALT)  &mt RIGHT_SHIFT SPACE  &lt 2 EQUAL  &kp RIGHT_BRACKET  &kp ENTER
+                                  &mt LEFT_ALT SPACE  &mt LEFT_GUI TAB  &lt 1 RG(LEFT_BRACKET)  &mt LEFT_SHIFT SPACE  &lt 0 RG(RIGHT_BRACKET)    &mt RG(RIGHT_ALT) DELETE  &mt RIGHT_SHIFT SPACE  &lt 2 EQUAL  &kp RIGHT_BRACKET  &kp ENTER
             >;
 
             sensor-bindings =
