@@ -38,11 +38,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |        | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&gresc                    &kp N1  &kp N2              &kp N3            &kp N4                  &kp N5                                                                     &kp N6                 &kp N7     &kp N8             &kp N9     &kp N0    &kp MINUS
-&kp GRAVE                 &kp Q   &kp W               &kp E             &kp R                   &kp T                                                                      &kp Y                  &kp U      &kp I              &kp O      &kp P     &kp LEFT_BRACKET
-&mt LEFT_GUI PAGE_UP      &kp A   &kp S               &kp D             &kp F                   &kp G                                                                      &kp H                  &kp J      &kp K              &kp L      &kp SEMI  &kp SINGLE_QUOTE
-&mt LEFT_SHIFT PAGE_DOWN  &kp Z   &kp X               &kp C             &kp V                   &kp B                 &mt LEFT_CONTROL TAB       &mt RCTRL BACKSPACE       &kp N                  &kp M      &kp COMMA          &kp DOT    &kp FSLH  &lt 2 NON_US_BACKSLASH
-                                  &mt LEFT_ALT SPACE  &mt LEFT_GUI TAB  &lt 1 RG(LEFT_BRACKET)  &mt LEFT_SHIFT SPACE  &lt 2 RG(RIGHT_BRACKET)    &mt DELETE RG(RIGHT_ALT)  &mt RIGHT_SHIFT SPACE  &kp ENTER  &kp RIGHT_BRACKET  &kp EQUAL
+&gresc                    &kp N1  &kp N2              &kp N3            &kp N4                  &kp N5                                                                     &kp N6                 &kp N7       &kp N8             &kp N9     &kp N0    &kp MINUS
+&kp GRAVE                 &kp Q   &kp W               &kp E             &kp R                   &kp T                                                                      &kp Y                  &kp U        &kp I              &kp O      &kp P     &kp LEFT_BRACKET
+&mt LEFT_GUI PAGE_UP      &kp A   &kp S               &kp D             &kp F                   &kp G                                                                      &kp H                  &kp J        &kp K              &kp L      &kp SEMI  &kp SINGLE_QUOTE
+&mt LEFT_SHIFT PAGE_DOWN  &kp Z   &kp X               &kp C             &kp V                   &kp B                 &mt LEFT_CONTROL TAB       &mt RCTRL BACKSPACE       &kp N                  &kp M        &kp COMMA          &kp DOT    &kp FSLH  &mt RIGHT_SHIFT NON_US_BACKSLASH
+                                  &mt LEFT_ALT SPACE  &mt LEFT_GUI TAB  &lt 1 RG(LEFT_BRACKET)  &mt LEFT_SHIFT SPACE  &lt 0 RG(RIGHT_BRACKET)    &mt DELETE RG(RIGHT_ALT)  &mt RIGHT_SHIFT SPACE  &lt 2 EQUAL  &kp RIGHT_BRACKET  &kp ENTER
             >;
 
             sensor-bindings =
@@ -69,13 +69,13 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-        lower_layer {
+        layer_2 {
             bindings = <
-&kp TILDE  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                    &kp CARET             &kp AMPERSAND      &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE
-&trans     &kp F1           &kp F2       &kp F3    &kp F4      &kp F5                         &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp UP_ARROW    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PLUS
-&kp F16    &kp F6           &kp F7       &kp F8    &kp F9      &kp F10                        &kp NON_US_BACKSLASH  &kp LEFT           &kp DOWN_ARROW  &kp RIGHT             &kp COLON              &kp DOUBLE_QUOTES
-&kp F17    &kp F11          &kp F12      &kp F13   &kp F14     &kp F15      &trans    &trans  &kp PIPE              &kp BACKSLASH      &kp LESS_THAN   &kp GREATER_THAN      &kp QUESTION           &kp RS(ENTER)
-                            &trans       &trans    &trans      &trans       &trans    &trans  &trans                &trans             &trans          &trans
+&trans  &kp F1   &kp F2   &kp F3   &kp F4  &kp F5                    &kp F6   &kp F7    &kp F8    &kp F9     &kp F10  &kp F11
+&trans  &kp F11  &kp F12  &kp F13  &trans  &trans                    &kp F12  &trans    &kp UP    &trans     &trans   &trans
+&trans  &trans   &trans   &trans   &trans  &trans                    &trans   &kp LEFT  &kp DOWN  &kp RIGHT  &kp T    &trans
+&trans  &trans   &trans   &trans   &trans  &trans  &trans    &trans  &trans   &trans    &trans    &trans     &trans   &trans
+                 &trans   &trans   &trans  &trans  &trans    &trans  &trans   &kp F12   &trans    &trans
             >;
         };
     };
