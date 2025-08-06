@@ -40,11 +40,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |        | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE                  &kp N1  &kp N2          &kp N3         &kp N4            &kp N5                                                                  &kp N6                 &kp N7             &kp N8                       &kp N9     &kp N0    &kp MINUS
-&kp UP_ARROW               &kp Q   &kp W           &kp E          &kp R             &kp T                                                                   &kp Y                  &kp U              &kp I                        &kp O      &kp P     &kp LEFT_BRACKET
-&kp RIGHT_ARROW            &kp A   &kp S           &kp D          &mt LEFT_SHIFT F  &kp G                                                                   &kp H                  &mt RIGHT_SHIFT J  &kp K                        &kp L      &kp SEMI  &kp SINGLE_QUOTE
-&mt LEFT_SHIFT DOWN_ARROW  &kp Z   &kp X           &kp C          &kp V             &kp B                 &mt LEFT_GUI TAB        &mt RCTRL BACKSPACE       &kp N                  &kp M              &kp COMMA                    &kp DOT    &kp FSLH  &mt RIGHT_SHIFT BACKSLASH
-                                   &kp LEFT_ARROW  &mt RCTRL TAB  &lt 1 ESCAPE      &mt LEFT_SHIFT SPACE  &mt LEFT_ALT LS(TAB)    &mt RG(RIGHT_ALT) DELETE  &mt RIGHT_SHIFT SPACE  &lt 1 EQUAL        &mt RIGHT_GUI RIGHT_BRACKET  &kp ENTER
+&kp GRAVE        &kp N1  &kp N2          &kp N3              &kp N4            &kp N5                                                                         &kp N6       &kp N7                 &kp N8                       &kp N9                &kp N0    &kp MINUS
+&kp UP_ARROW     &kp Q   &kp W           &kp E               &kp R             &kp T                                                                          &kp Y        &kp U                  &kp I                        &kp O                 &kp P     &kp LEFT_BRACKET
+&kp RIGHT_ARROW  &kp A   &kp S           &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G                                                                          &kp H        &mt RIGHT_SHIFT J      &kp K                        &kp L                 &kp SEMI  &kp SINGLE_QUOTE
+&kp DOWN_ARROW   &kp Z   &kp X           &kp C               &kp V             &kp B                 &mt LEFT_GUI TAB        &mt RG(RS(RA(RCTRL))) BACKSPACE  &kp N        &kp M                  &kp COMMA                    &kp DOT               &kp FSLH  &kp ENTER
+                         &kp LEFT_ARROW  &mt RCTRL TAB       &lt 1 ESCAPE      &mt LEFT_SHIFT SPACE  &mt LEFT_ALT LS(TAB)    &mt RG(RIGHT_ALT) DELETE         &lt 1 SPACE  &mt RIGHT_SHIFT EQUAL  &mt RIGHT_GUI RIGHT_BRACKET  &kp NON_US_BACKSLASH
             >;
 
             sensor-bindings =
@@ -61,11 +61,11 @@
             //              |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&bootloader  &kp F1        &kp F2        &kp F3        &kp F4          &kp F5                                &kp F6    &kp F7         &kp F8                 &kp F9           &kp F10          &kp F11
-&sys_reset   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR_ALL  &kp RG(RA(T))                         &kp F12   &kp F13        &kp F14                &kp F15          &kp F16          &kp RG(LEFT_BRACKET)
-&trans       &trans        &trans        &trans        &trans          &trans                                &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP            &kp END          &rgb_ug RGB_EFR  &rgb_ug RGB_EFF
-&trans       &trans        &trans        &trans        &trans          &trans         &trans    &bootloader  &trans    &trans         &trans                 &trans           &trans           &trans
-                           &trans        &trans        &trans          &trans         &trans    &sys_reset   &trans    &kp F12        &kp RG(RIGHT_BRACKET)  &rgb_ug RGB_TOG
+&bootloader  &kp F1      &kp F2      &kp F3          &kp F4           &kp F5                                  &kp F6          &kp F7          &kp F8                 &kp F9                    &kp F10            &kp RG(MINUS)
+&sys_reset   &kp F11     &kp F12     &kp F13         &kp F14          &kp F15                                 &kp F16         &kp F17         &kp F18                &kp F19                   &kp F20            &kp RG(LEFT_BRACKET)
+&trans       &bt BT_NXT  &bt BT_PRV  &bt BT_CLR_ALL  &rgb_ug RGB_EFR  &rgb_ug RGB_TOG                         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW           &kp RIGHT                 &kp RG(SEMICOLON)  &kp RG(SQT)
+&trans       &trans      &trans      &trans          &trans           &trans           &trans    &bootloader  &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP            &kp END                   &kp RG(SLASH)      &kp RS(ENTER)
+                         &trans      &trans          &trans           &trans           &trans    &sys_reset   &trans          &kp RG(EQUAL)   &kp RG(RIGHT_BRACKET)  &kp RG(NON_US_BACKSLASH)
             >;
 
             sensor-bindings =
