@@ -14,8 +14,6 @@
 
 &led_strip { chain-length = <29>; };
 
-&mt { flavor = "tap-preferred"; };
-
 / {
     behaviors {
         home_row_mod: hrm {
@@ -24,7 +22,8 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
         };
     };
 
@@ -40,11 +39,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |        | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE      &kp N1  &kp N2                 &kp N3              &kp N4            &kp N5                                                                     &kp N6                 &kp N7             &kp N8                           &kp N9     &kp N0    &kp MINUS
-&kp PAGE_UP    &kp Q   &kp W                  &kp E               &kp R             &kp T                                                                      &kp Y                  &kp U              &kp I                            &kp O      &kp P     &kp LEFT_BRACKET
-&kp END        &kp A   &kp S                  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G                                                                      &kp H                  &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K              &kp L      &kp SEMI  &kp SINGLE_QUOTE
-&kp PAGE_DOWN  &kp Z   &kp X                  &kp C               &kp V             &kp B                 &mt LEFT_GUI TAB        &mt RS(RIGHT_ALT) BACKSPACE  &kp N                  &kp M              &kp COMMA                        &kp DOT    &kp FSLH  &kp BACKSLASH
-                       &mt LEFT_CONTROL HOME  &mt LEFT_SHIFT TAB  &lt 1 ESCAPE      &mt LEFT_SHIFT SPACE  &mt LEFT_ALT LS(TAB)    &mt RG(RIGHT_ALT) DELETE     &mt RIGHT_SHIFT SPACE  &lt 1 EQUAL        &mt RIGHT_CONTROL RIGHT_BRACKET  &kp ENTER
+&kp GRAVE      &kp N1  &kp N2                 &kp N3                        &kp N4                      &kp N5                                                                               &kp N6                           &kp N7                       &kp N8                           &kp N9     &kp N0    &kp MINUS
+&kp PAGE_UP    &kp Q   &kp W                  &kp E                         &kp R                       &kp T                                                                                &kp Y                            &kp U                        &kp I                            &kp O      &kp P     &kp LEFT_BRACKET
+&kp END        &kp A   &kp S                  &home_row_mod LEFT_CONTROL D  &home_row_mod LEFT_SHIFT F  &kp G                                                                                &kp H                            &home_row_mod RIGHT_SHIFT J  &home_row_mod RIGHT_CONTROL K    &kp L      &kp SEMI  &kp SINGLE_QUOTE
+&kp PAGE_DOWN  &kp Z   &kp X                  &kp C                         &kp V                       &kp B                           &mt LEFT_GUI TAB        &mt RS(RIGHT_ALT) BACKSPACE  &kp N                            &kp M                        &kp COMMA                        &kp DOT    &kp FSLH  &kp BACKSLASH
+                       &mt LEFT_CONTROL HOME  &mt LEFT_SHIFT TAB            &lt 1 ESCAPE                &home_row_mod LEFT_SHIFT SPACE  &mt LEFT_ALT LS(TAB)    &mt RG(RIGHT_ALT) DELETE     &home_row_mod RIGHT_SHIFT SPACE  &lt 1 EQUAL                  &mt RIGHT_CONTROL RIGHT_BRACKET  &kp ENTER
             >;
 
             sensor-bindings =
