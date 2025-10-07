@@ -61,11 +61,11 @@
             //              |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&bootloader      &kp F1           &kp F2   &kp F3   &kp F4   &kp F5                          &kp F6         &kp F7         &kp F8                    &kp F9                     &kp F10            &kp RS(MINUS)
-&sys_reset       &kp F11          &kp F12  &kp F13  &kp F14  &kp F15                         &kp F16        &kp F17        &kp UP_ARROW              &kp RG(P)                  &kp RG(LS(P))      &kp RS(EQUAL)
-&rgb_ug RGB_EFF  &rgb_ug RGB_TOG  &trans   &trans   &trans   &trans                          &kp PAGE_UP    &kp LEFT       &kp DOWN_ARROW            &kp RIGHT                  &kp RS(SEMICOLON)  &kp RS(SQT)
-&rgb_ug RGB_EFR  &trans           &trans   &trans   &trans   &trans   &trans    &bootloader  &kp PAGE_DOWN  &kp RC(MINUS)  &kp RG(RC(LEFT))          &kp RG(RC(RIGHT))          &kp RS(SLASH)      &kp RS(ENTER)
-                                  &trans   &trans   &trans   &trans   &trans    &sys_reset   &trans         &kp RC(EQUAL)  &kp RG(RS(LEFT_BRACKET))  &kp RG(RS(RIGHT_BRACKET))
+&bootloader  &kp F1           &kp F2           &kp F3           &kp F4    &kp F5                          &kp F6                &kp F7                 &kp F8                    &kp F9                     &kp F10            &kp RS(MINUS)
+&sys_reset   &kp F11          &kp F12          &kp F13          &kp F14   &kp F15                         &kp PAGE_UP           &trans                 &kp UP_ARROW              &kp RG(P)                  &kp RG(LS(P))      &kp RS(EQUAL)
+&kp F16      &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG  &kp HOME  &kp END                         &kp PAGE_DOWN         &kp LEFT               &kp DOWN_ARROW            &kp RIGHT                  &kp RS(SEMICOLON)  &kp RS(SQT)
+&kp F17      &kp F18          &trans           &trans           &trans    &trans   &trans    &bootloader  &kp RG(LEFT_BRACKET)  &kp RG(RIGHT_BRACKET)  &kp RG(RC(LEFT))          &kp RG(RC(RIGHT))          &kp RS(SLASH)      &kp RS(ENTER)
+                              &trans           &trans           &trans    &trans   &trans    &sys_reset   &trans                &trans                 &kp RG(RS(LEFT_BRACKET))  &kp RG(RS(RIGHT_BRACKET))
             >;
 
             sensor-bindings =
